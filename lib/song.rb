@@ -9,6 +9,8 @@ class Song
     save
   end
   
+  def artist=(name)
+  
   def save
     @@all << self
   end
