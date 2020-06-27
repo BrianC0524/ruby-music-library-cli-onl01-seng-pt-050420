@@ -20,4 +20,10 @@ class Song
     @@all.clear
   end
   
+  def self.create(new_song)
+    song = self.new(new_song)
+    song.save
+    song
+  end
+  
 end
